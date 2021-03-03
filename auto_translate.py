@@ -9,17 +9,17 @@ import time
 import translator
 
 def aggregate_translate(text):
-    # print("==================")
-    # print("=Google Translate=")
-    # print("==================")
-    # translator.main(argv = ["", "--engine=google", "--from=en", "--to=zh-CH", text])
-    # print()
+    print("==================")
+    print("=Google Translate=")
+    print("==================")
+    translator.main(argv = ["", "--engine=google", "--from=en", "--to=zh-CH", text])
+    print()
     
-    # print("==================")
-    # print("=Youdao Translate=")
-    # print("==================")
-    # translator.main(argv = ["", "--engine=youdao", "--from=en", "--to=zh-CH", text])
-    # print()
+    print("==================")
+    print("=Youdao Translate=")
+    print("==================")
+    translator.main(argv = ["", "--engine=youdao", "--from=en", "--to=zh-CH", text])
+    print()
     
     if (len(text) > 30):
         return
