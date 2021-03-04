@@ -9,3 +9,7 @@ If the text from the clipboard contains more than one sentence,  it will be tran
 ## V 1.1
 
 Fix the bug that Youdao Translator can't translate full sentence.
+
+## V 1.2
+
+Fix some exception handle bugs.
