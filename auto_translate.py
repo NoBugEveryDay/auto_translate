@@ -11,15 +11,6 @@ import translator
 def aggregate_translate(text):
     try:
         print("==================")
-        print("=Google Translate=")
-        print("==================")
-        translator.main(argv = ["", "--engine=google", "--from=en", "--to=zh-CH", text])
-        print()
-    except Exception as e:
-        print(e)
-    
-    try:
-        print("==================")
         print("=Youdao Translate=")
         print("==================")
         translator.main(argv = ["", "--engine=youdao", "--from=en", "--to=zh-CH", text])
@@ -34,6 +25,15 @@ def aggregate_translate(text):
         print("=Bing Translate=")
         print("================")
         translator.main(argv = ["", "--engine=bing", "--from=en", "--to=zh-CH", text])
+        print()
+    except Exception as e:
+        print(e)
+    
+    try:
+        print("==================")
+        print("=Google Translate=")
+        print("==================")
+        translator.main(argv = ["", "--engine=google", "--from=en", "--to=zh-CH", text])
         print()
     except Exception as e:
         print(e)
